@@ -166,72 +166,19 @@
     </section>
 
     <section class="products">
-      <div class="conteiner conteiner-products">
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/shoesW.png" alt>
-          <p class="products-card-name">Branded shoes</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/tees.png" alt>
-          <p class="products-card-name">Branded tees</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/shoesW.png" alt>
-          <p class="products-card-name">Branded shoes</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/shoesW.png" alt>
-          <p class="products-card-name">Branded shoes</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/bag.png" alt>
-          <p class="products-card-name">Branded bag</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <div class="products-card">
-          <img class="products-card-img" src="../assets/shoesW.png" alt>
-          <p class="products-card-name">Branded shoes</p>
-          <p class="products-card-price">$300</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>
-        <!-- <div class="products-card" v-for="product in products">
-          <img class="products-card-img" v-bind:src="product.img" alt>
-          <p class="products-card-name">{{product.title}}</p>
-          <p class="products-card-price">$ {{product.price}}</p>
-          <p class="products-card-button">
-            <a class="button_small_green" href="#">Buy now</a>
-          </p>
-        </div>-->
-      </div>
+      <custom-card-test></custom-card-test>
     </section>
   </main>
 </template>
 
 <script>
+import CustomCardTest from "./CustomCardTest.vue";
 export default {
   data() {
     return {};
+  },
+  components: {
+    CustomCardTest
   }
 };
 </script>
