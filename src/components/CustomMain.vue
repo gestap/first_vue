@@ -166,19 +166,54 @@
     </section>
 
     <section class="products">
-      <custom-card-test></custom-card-test>
+      <div class="conteiner conteiner-products">
+        <custom-product-card
+          v-for="product in products"
+          :key="product.id"
+          :img="product.img"
+          :name="product.title"
+          :price="product.price"
+        ></custom-product-card>
+      </div>
     </section>
   </main>
 </template>
 
 <script>
-import CustomCardTest from "./CustomCardTest.vue";
+import CustomProductCard from "./CustomProductCard.vue";
 export default {
   data() {
-    return {};
+    return {
+      products: [
+        {
+          img: `require(../assets/shoes.png)`,
+          name: "shoes",
+          price: 200,
+          count: 0
+        },
+        {
+          img: "assets/tees.png",
+          name: "tees",
+          price: 150,
+          count: 0
+        },
+        {
+          img: "../assets/pants.png",
+          name: "pants",
+          price: 250,
+          count: 0
+        },
+        {
+          img: "@assets/tshirts.png",
+          name: "tshirts",
+          price: 300,
+          count: 0
+        }
+      ]
+    };
   },
   components: {
-    CustomCardTest
+    CustomProductCard
   }
 };
 </script>
