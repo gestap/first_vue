@@ -3,6 +3,7 @@
     <custom-header></custom-header>
     <custom-main></custom-main>
     <custom-footer></custom-footer>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
