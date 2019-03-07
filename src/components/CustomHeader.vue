@@ -16,30 +16,30 @@
       <div class="conteiner">
         <nav class="nav">
           <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Sale</a>
-            </li>
-            <li>
-              <a href="#">Handbags</a>
-            </li>
-            <li>
-              <a href="#">Wallets</a>
-            </li>
-            <li>
-              <a href="#">Accessories</a>
-            </li>
-            <li>
-              <a href="#">Men Store</a>
-            </li>
-            <li>
-              <a href="#">Shoes</a>
-            </li>
-            <li>
-              <a href="#">Vintage</a>
-            </li>
+            <router-link tag="li" to="/">
+              <a>Home</a>
+            </router-link>
+            <router-link tag="li" to="/category/jeans">
+              <a>Jeans</a>
+            </router-link>
+            <router-link tag="li" to="/category/handbags">
+              <a>Handbags</a>
+            </router-link>
+            <router-link tag="li" to="/category/wallets">
+              <a>Wallets</a>
+            </router-link>
+            <router-link tag="li" to="/category/accessories">
+              <a>Accessories</a>
+            </router-link>
+            <router-link tag="li" to="/category/men_store">
+              <a>Men Store</a>
+            </router-link>
+            <router-link tag="li" to="/category/shoes">
+              <a>Shoes</a>
+            </router-link>
+            <router-link tag="li" to="/category/vintage">
+              <a>Vintage</a>
+            </router-link>
             <li>
               <a href="#">Services</a>
             </li>

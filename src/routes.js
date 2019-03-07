@@ -1,18 +1,12 @@
-import CustomHeader from './components/CustomHeader.vue'
-import CustomMain from './components/CustomMain.vue'
-import CustomFooter from './components/CustomFooter.vue'
-
+import Home from './components/pages/Home.vue'
+import Category from './components/pages/Category.vue'
 
 export default [{
     path: '/',
-    component: CustomHeader
+    component: Home
   },
   {
-    path: '/main',
-    component: CustomMain
-  },
-  {
-    path: '/footer',
-    component: CustomFooter
+    path: '/category/:categoryName',
+    component: Category
   }
 ]

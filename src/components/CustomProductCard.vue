@@ -1,6 +1,6 @@
 <template>
   <div class="products-card">
-    <img class="products-card-img" src="../assets/tees.png" :alt="name">
+    <img class="products-card-img" :src="img" :alt="name">
     <p class="products-card-name">{{name}}</p>
     <p class="products-card-price">$ {{price}}</p>
     <p class="products-card-button">

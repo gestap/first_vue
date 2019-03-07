@@ -1,9 +1,8 @@
 <template>
   <div>
     <custom-header></custom-header>
-    <custom-main></custom-main>
+    <router-view></router-view>
     <custom-footer></custom-footer>
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -11,13 +10,11 @@
 
 <script>
 import CustomHeader from "./components/CustomHeader.vue";
-import CustomMain from "./components/CustomMain.vue";
 import CustomFooter from "./components/CustomFooter.vue";
 
 export default {
   components: {
     CustomHeader,
-    CustomMain,
     CustomFooter
   }
 };

@@ -186,27 +186,39 @@ export default {
     return {
       products: [
         {
-          img: `require(../assets/shoes.png)`,
+          img: require("../assets/shoes.png"),
           name: "shoes",
           price: 200,
           count: 0
         },
         {
-          img: "assets/tees.png",
+          img: require("../assets/tees.png"),
           name: "tees",
           price: 150,
           count: 0
         },
         {
-          img: "../assets/pants.png",
+          img: require("../assets/pants.png"),
           name: "pants",
           price: 250,
           count: 0
         },
         {
-          img: "@assets/tshirts.png",
+          img: require("../assets/shoesW.png"),
+          name: "women shoes",
+          price: 300,
+          count: 0
+        },
+        {
+          img: require("../assets/tshirts.png"),
           name: "tshirts",
           price: 300,
+          count: 0
+        },
+        {
+          img: require("../assets/bag.png"),
+          name: "bag",
+          price: 350,
           count: 0
         }
       ]
