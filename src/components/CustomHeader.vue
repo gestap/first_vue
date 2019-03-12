@@ -40,12 +40,12 @@
             <router-link tag="li" to="/category/vintage">
               <a>Vintage</a>
             </router-link>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
+            <router-link tag="li" to="/services">
+              <a>Services</a>
+            </router-link>
+            <router-link tag="li" to="/contact_us">
+              <a>Contact us</a>
+            </router-link>
           </ul>
         </nav>
       </div>
